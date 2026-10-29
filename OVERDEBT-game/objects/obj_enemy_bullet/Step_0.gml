@@ -18,7 +18,7 @@ repeat (_steps) {
             with (_player) {
                 energy = max(0, energy - other.bullet_damage);
                 life = max(0, life - other.bullet_damage);
-                damage_cooldown = 30;
+                damage_cooldown = invincibility_frames;
                 play_audio_random(sfx_damage);
             }
         }

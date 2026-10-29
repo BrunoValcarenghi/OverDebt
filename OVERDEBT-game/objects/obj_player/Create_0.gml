@@ -1,18 +1,24 @@
-move_speed = 2; 
+if (!variable_global_exists("upgrade_levels")) global.upgrade_levels = array_create(8, 0);
+if (!variable_global_exists("sucata")) global.sucata = 0;
+
+var _upgrade_levels = global.upgrade_levels;
+move_speed = 2 + _upgrade_levels[5] * 0.2; 
 gravity_strength = .3;
 max_fall_speed = 5;
-jump_speed = 7;
+jump_speed = 7 + _upgrade_levels[0] * 0.6;
 vsp = 0;
 grounded = false;
 coyote_frames = 12;
 coyote_timer = 0;
 aiming = false;
 aim_angle = 0;
-aim_limit = 15;
+aim_limit = min(45, 15 + _upgrade_levels[4] * 3);
 shoot_cooldown = 0;
-shoot_rate = 30;
+shoot_rate = max(5, 30 - _upgrade_levels[6] * 3);
+bullet_damage = 1 + _upgrade_levels[1];
+invincibility_frames = 30 + _upgrade_levels[7] * 6;
 
-energy_max = 100
+energy_max = 100 + _upgrade_levels[3] * 20
 energy = energy_max 
 energy_tempo = 90
 alarm[1] = energy_tempo
@@ -22,7 +28,7 @@ global.hit_particle_system = part_system_create_layer("Instances", false, ef_hit
 dir = 1
 moviment = false
 
-life_max = 20
+life_max = 20 + _upgrade_levels[2] * 5
 life = life_max
 
 morreu = false

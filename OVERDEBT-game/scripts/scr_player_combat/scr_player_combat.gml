@@ -18,6 +18,7 @@ function player_combat() {
 		var _bullet = instance_create_layer(_muzzle_x, _muzzle_y, layer, obj_bullet);
 		_bullet.shot_angle = aim_angle;
 		_bullet.image_angle = aim_angle;
+		_bullet.bullet_damage = bullet_damage;
 		shoot_cooldown = shoot_rate;
 		energy -= 2
 		play_audio_random(sfx_shoot)

@@ -169,7 +169,7 @@ if (_player != noone && contact_cooldown <= 0 && place_meeting(x, y, obj_player)
         with (_player) {
             energy = max(0, energy - other.contact_damage);
             life = max(0, life - other.contact_damage);
-            damage_cooldown = 30;
+            damage_cooldown = invincibility_frames;
 			play_audio_random(sfx_damage)
         }
         contact_cooldown = 30;
