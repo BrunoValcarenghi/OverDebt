@@ -1,0 +1,12 @@
+event_inherited();
+patrol_speed = 0.8;
+patrol_range = 80;
+patrol_left = patrol_start_x - patrol_range;
+patrol_right = patrol_start_x + patrol_range;
+contact_damage = 8;
+enemy_health = 2;
+enemy_flying = true;
+enemy_fly_speed = 1.2;
+vision_range = 200;
+vision_height = 64;
+sucatas = 1;
