@@ -25,3 +25,4 @@ else var _uix = x - camw/2 - 25
 draw_set_font(f_numero)
 draw_sprite(spr_sucata, 0, _uix + 43, _uiy + 200)
 text_border(_uix + 55, _uiy + 200, obj_player.sucata, #090a14, #ebede9, 2)
+

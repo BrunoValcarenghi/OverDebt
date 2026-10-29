@@ -74,6 +74,7 @@
     {"id":{"name":"src_text","path":"scripts/src_text/src_text.yy",},},
     {"id":{"name":"sq_vertical_in","path":"sequences/sq_vertical_in/sq_vertical_in.yy",},},
     {"id":{"name":"sq_vertical_out","path":"sequences/sq_vertical_out/sq_vertical_out.yy",},},
+    {"id":{"name":"msc_musica","path":"sounds/msc_musica/msc_musica.yy",},},
     {"id":{"name":"sfx_damage","path":"sounds/sfx_damage/sfx_damage.yy",},},
     {"id":{"name":"sfx_death","path":"sounds/sfx_death/sfx_death.yy",},},
     {"id":{"name":"sfx_enemy_dam","path":"sounds/sfx_enemy_dam/sfx_enemy_dam.yy",},},

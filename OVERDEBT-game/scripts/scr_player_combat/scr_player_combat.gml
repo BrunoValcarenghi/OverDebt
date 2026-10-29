@@ -20,7 +20,7 @@ function player_combat() {
 		_bullet.image_angle = aim_angle;
 		_bullet.bullet_damage = bullet_damage;
 		shoot_cooldown = shoot_rate;
-		energy -= 2
+		energy -= shot_energy_cost
 		play_audio_random(sfx_shoot)
 		
 	}

@@ -25,3 +25,4 @@ if (variable_global_exists("shake_amount") && global.shake_amount > 0) {
 }
 
 camera_set_view_pos(view_camera[0], (x - (camw / 2)) + _shake_x, (y - (camh / 2)) + _shake_y);
+if (variable_global_exists("scrap_loss_timer") && global.scrap_loss_timer > 0) global.scrap_loss_timer -= 1;
